@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title><%= data.data.title %> - It's movie time</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+</head>
+<body class="movie">
+    <div class="cover" data-poster="<%= data.data.images.background_image %>"></div>
+    <main class="container">
+        <div class="row">
+            <% include partials/movie %>
+        </div>
+        <div class="row">
+            <% include partials/media %>
+        </div>
+    </main>
+</body>
+</html>
