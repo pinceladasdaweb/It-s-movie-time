@@ -16,7 +16,9 @@ router.get('/:id', function (req, res) {
                 data: body
             });
         } else {
-            res.send('Deu pau');
+            res.render('error', {
+                data: body
+            });
         }
     });
 });
