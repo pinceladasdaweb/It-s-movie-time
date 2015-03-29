@@ -1,6 +1,6 @@
 {
     "name": "it-s-movie-time",
-    "description": "",
+    "description": "Display movies with YTS API and Node.js",
     "main": "app.js",
     "version": "0.0.1",
     "author": "Pedro Rogério",
