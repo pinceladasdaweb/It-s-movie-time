@@ -1,0 +1,32 @@
+{
+    "name": "it-s-movie-time",
+    "description": "",
+    "main": "app.js",
+    "version": "0.0.1",
+    "author": "Pedro Rogério",
+    "homepage": "",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon ./bin/www"
+    },
+    "dependencies": {
+        "express": "~4.12.3",
+        "request": "~2.54.0",
+        "ejs": "~2.3.1"
+    },
+    "devDependencies": {
+        "nodemon": "*"
+    },
+    "keywords": [
+        "yts",
+        "api"
+    ],
+    "repository": "https://github.com/pinceladasdaweb/It-s-movie-time",
+    "bugs": {
+        "url": "https://github.com/pinceladasdaweb/It-s-movie-time/issues"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://opensource.org/licenses/MIT"
+    }]
+}

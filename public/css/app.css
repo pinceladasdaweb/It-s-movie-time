@@ -1,0 +1,21 @@
+/****** Home ******/
+.movie-thumbnails {
+    margin-bottom: 20px;
+    min-height: 510px;
+    position: relative
+}
+
+/****** Movie ******/
+.movie-poster,
+.movie-info {
+    margin-bottom: 40px
+}
+
+.movie-poster img {
+    margin: 0 auto
+}
+
+.media-title {
+    padding-left: 15px;
+    padding-right: 15px
+}

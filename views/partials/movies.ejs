@@ -1,0 +1,7 @@
+<% data.data.movies.forEach(function(movie) { %>
+    <article class="movie-thumbnails col-md-3 col-sm-6 col-xs-12 text-center">
+        <a href="/movie/<%= movie.id %>" title="View <%= movie.title %>"><img src="<%= movie.medium_cover_image %>" alt="<%= movie.title %>" title="<%= movie.title %>"></a>
+        <h2 class="title"><%= movie.title %></h2>
+        <p><%= movie.year %></p>
+    </article>
+<% }); %>
