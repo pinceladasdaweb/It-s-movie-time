@@ -1,3 +1,13 @@
+/****** Header ******/
+header {
+    margin-bottom: 40px
+}
+
+/****** Container ******/
+.container {
+    margin-bottom: 20px;
+}
+
 /****** Home ******/
 .movie-thumbnails {
     margin-bottom: 20px;
