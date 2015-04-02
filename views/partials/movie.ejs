@@ -2,7 +2,7 @@
     <img class="img-responsive" src="<%= data.data.images.large_cover_image %>" alt="<%= data.data.title_long %>" title="<%= data.data.title_long %>">
 </div>
 <div class="movie-info col-md-7 col-sm-6 col-xs-12">
-    <h2 class="movie-title"><%= data.data.title_long %></h2>
+    <h2 class="movie-title"><%= data.data.title_long %> <a href="http://www.imdb.com/title/<%= data.data.imdb_code %>/" title="IMDb"><img alt="IMDb" title="IMDb" src="/img/imdb.png"></a></h2>
     <ul class="genres">
         <% data.data.genres.forEach(function(genre) { %>
         <li><%= genre %></li>
