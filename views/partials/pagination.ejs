@@ -1,0 +1,10 @@
+<%
+    var prevPage = data.data.page_number - 1;
+    var nextPage = data.data.page_number + 1;
+%>
+<ul class="pager">
+    <% if (prevPage >= 1) { %>
+    <li><a href="/page/<%= prevPage %>">Previous</a></li>
+    <% } %>
+    <li><a href="/page/<%= nextPage %>">Next</a></li>
+</ul>
