@@ -2,6 +2,7 @@
 "use strict";
 
 var express = require('express'),
+    moment  = require('moment'),
     request = require('request'),
     router  = express.Router();
 
@@ -13,11 +14,13 @@ router.get('/', function (req, res) {
     }, function (error, response, body) {
         if (body.status === 'ok') {
             res.render('index', {
-                data: body
+                data: body,
+                moment: moment
             });
         } else {
             res.render('error', {
-                data: body
+                data: body,
+                moment: moment
             });
         }
     });
