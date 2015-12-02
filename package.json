@@ -2,7 +2,7 @@
     "name": "it-s-movie-time",
     "description": "Display movies with YTS API and Node.js",
     "main": "app.js",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Pedro Rogério",
     "homepage": "",
     "scripts": {
@@ -10,10 +10,10 @@
         "start": "nodemon ./bin/www"
     },
     "dependencies": {
-        "express": "~4.12.3",
-        "moment": "~2.10.2",
-        "request": "~2.55.0",
-        "ejs": "~2.3.1"
+        "express": "~4.13.3",
+        "moment": "~2.10.6",
+        "request": "~2.67.0",
+        "ejs": "~2.3.4"
     },
     "devDependencies": {
         "nodemon": "*"
