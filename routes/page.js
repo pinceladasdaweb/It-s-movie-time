@@ -9,7 +9,7 @@ var express = require('express'),
 router.get('/:id', function (req, res) {
     var page = parseInt(req.params.id);
     request({
-        url: 'http://yts.to/api/v2/list_movies.json?page=' + page,
+        url: 'http://yts.ag/api/v2/list_movies.json?page=' + page,
         json: true,
         timeout: 10000
     }, function (error, response, body) {

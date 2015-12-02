@@ -8,7 +8,7 @@ var express = require('express'),
 
 router.get('/:id', function (req, res) {
     request({
-        url: 'http://yts.to/api/v2/movie_details.json?with_images=true&movie_id=' + req.params.id,
+        url: 'https://yts.ag/api/v2/movie_details.json?with_images=true&movie_id=' + req.params.id,
         json: true,
         timeout: 10000
     }, function (error, response, body) {

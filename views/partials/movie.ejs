@@ -1,17 +1,17 @@
 <div class="movie-poster col-md-5 col-sm-6 col-xs-12">
-    <img class="img-responsive" src="<%= data.data.images.large_cover_image %>" alt="<%= data.data.title_long %>" title="<%= data.data.title_long %>">
+    <img class="img-responsive" src="<%= data.data.movie.medium_cover_image %>" alt="<%= data.data.movie.title_long %>" title="<%= data.data.movie.title_long %>">
 </div>
 <div class="movie-info col-md-7 col-sm-6 col-xs-12">
-    <h2 class="movie-title"><%= data.data.title_long %> <a href="http://www.imdb.com/title/<%= data.data.imdb_code %>/" title="IMDb"><img alt="IMDb" title="IMDb" src="/img/imdb.png"></a></h2>
+    <h2 class="movie-title"><%= data.data.title_long %> <a href="http://www.imdb.com/title/<%= data.data.movie.imdb_code %>/" title="IMDb"><img alt="IMDb" title="IMDb" src="/img/imdb.png"></a></h2>
     <ul class="genres">
-        <% data.data.genres.forEach(function(genre) { %>
+        <% data.data.movie.genres.forEach(function(genre) { %>
         <li><%= genre %></li>
         <% }); %>
     </ul>
-    <p class="description"><%= data.data.description_full %></p>
+    <p class="description"><%= data.data.movie.description_full %></p>
     <h3>Download</h3>
     <ul>
-    <% data.data.torrents.forEach(function(torrent) { %>
+    <% data.data.movie.torrents.forEach(function(torrent) { %>
         <li><a href="<%= torrent.url %>" title=""><%= torrent.quality %></a></li>
     <% }); %>
     </ul>

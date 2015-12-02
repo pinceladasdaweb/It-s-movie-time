@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title><%= data.data.title %> - It's movie time</title>
+    <title><%= data.data.movie.title %> - It's movie time</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <% include partials/html5shiv %>
@@ -10,7 +10,7 @@
 </head>
 <body class="movie">
     <% include partials/header %>
-    <div class="cover" data-poster="<%= data.data.images.background_image %>"></div>
+    <div class="cover" data-poster="<%= data.data.movie.medium_cover_image %>"></div>
     <main class="container">
         <div class="row">
             <% include partials/movie %>
