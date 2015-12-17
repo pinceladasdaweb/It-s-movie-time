@@ -2,7 +2,7 @@
     "name": "it-s-movie-time",
     "description": "Display movies with YTS API and Node.js",
     "main": "app.js",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "author": "Pedro Rogério",
     "homepage": "",
     "scripts": {
