@@ -2,6 +2,8 @@
 
 Display movies with YTS API and Node.js.
 
+![](https://raw.github.com/pinceladasdaweb/It-s-movie-time/master/screenshot.png)
+
 ## Getting Started
 
 ```bash
