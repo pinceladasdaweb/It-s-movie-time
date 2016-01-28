@@ -1,0 +1,8 @@
+<% search.data.movies.forEach(function(movie) { %>
+<article>
+    <a href="/movie/<%= movie.id %>" title="View <%= movie.title %>"><img src="<%= movie.small_cover_image %>" alt="<%= movie.title %>" title="<%= movie.title %>">
+    <h4><%= movie.title %></h4>
+    <p><%= movie.year %></p>
+    </a>
+</article>
+<% }); %>
