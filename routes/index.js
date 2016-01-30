@@ -1,18 +1,17 @@
 /*jslint node: true */
 "use strict";
 
-var express = require('express'),
-    moment  = require('moment'),
-    request = require('request'),
-    router  = express.Router();
+const express = require('express'),
+      moment  = require('moment'),
+      request = require('request'),
+      router  = express.Router();
 
-router.get('/', function (req, res) {
+router.get('/', (req, res) => {
     request({
         url: 'https://yts.ag/api/v2/list_movies.json',
         json: true,
         timeout: 10000
-    }, function (error, response, body) {
-
+    }, (error, response, body) => {
         if (body.status === 'ok') {
             res.render('index', {
                 data: body,
@@ -26,29 +25,5 @@ router.get('/', function (req, res) {
         }
     });
 });
-
-router.get('/search/:searchText', function (req, res) {
-    request({
-        url: 'https://yts.ag/api/v2/list_movies.json?query_term='+req.params.searchText,
-        json: true,
-        timeout: 10000
-    }, function (error, response, body) {
-
-        if (body.status === 'ok') {
-            res.render('partials/result', {
-                search: body,
-                moment: moment
-            });
-        } else {
-            res.render('error', {
-                data: body,
-                moment: moment
-            });
-        }
-    });
-});
-
-
-
 
 module.exports = router;

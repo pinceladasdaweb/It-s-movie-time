@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var app = require('../app'), server;
 
-server = app.listen(3000, '127.0.0.1', function () {
+server = app.listen(3000, '127.0.0.1', () => {
     var host = server.address().address,
         port = server.address().port;
 
