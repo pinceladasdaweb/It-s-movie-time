@@ -2,7 +2,7 @@
     "name": "it-s-movie-time",
     "description": "Display movies with YTS API and Node.js",
     "main": "app.js",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "author": "Pedro Rogério",
     "homepage": "",
     "scripts": {
@@ -26,8 +26,5 @@
     "bugs": {
         "url": "https://github.com/pinceladasdaweb/It-s-movie-time/issues"
     },
-    "licenses": [{
-        "type": "MIT",
-        "url": "http://opensource.org/licenses/MIT"
-    }]
+    "license": "MIT",
 }
